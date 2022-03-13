@@ -1,0 +1,30 @@
+body{
+    font-family: 'Syne Mono', monospace;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.creative-text{
+    font-weight: bold;
+    font-size: 30px;
+}
+.creative-text:hover{
+    cursor: pointer;
+    text-shadow: #c591f7 1px 0 10px;
+}
+.new-user{
+    font-size: 20px;
+}
+.remove-txt-decoration{
+    text-decoration: none;
+    color: #6534d9;
+}
+.remove-txt-decoration:hover{
+    cursor: pointer;
+    font-weight: bold;
+    text-shadow: #c591f7 1px 0 10px;
+}
