@@ -1,6 +1,9 @@
 body{
     font-family: 'Syne Mono', monospace;
 }
+
+/*  header */
+
 nav{
     display: flex;
     justify-content: space-between;
@@ -27,4 +30,94 @@ nav{
     cursor: pointer;
     font-weight: bold;
     text-shadow: #c591f7 1px 0 10px;
+}
+
+/*  body */
+
+section{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3%;
+}
+.img-propertie{
+    width: 600px;
+    box-shadow: rgb(85, 91, 255) 0px 0px 0px 3px,
+    rgb(129, 102, 194) 0px 0px 0px 6px,
+    rgb(61, 40, 110) 0px 0px 0px 9px;
+    margin-left: 25%;
+}
+.form-container{
+    margin-right: 12%;
+}
+#wellcome-back-txt{
+    font-weight: bold;
+    font-size: 35px;
+}
+#login-to-continue-txt{
+    color: #858794;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+.input-propertie{
+    margin-top: 40px;
+    padding: 20px;
+    width: 500px;
+    border-radius: 30px;
+    border: 0px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+    rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.input-propertie:hover{
+    cursor: pointer;
+}
+.input-propertie:focus{
+    outline: none;
+    border: 2px solid #6534d9;
+}
+::placeholder{
+    font-family: 'Syne Mono', monospace;
+}
+.btn-container{
+    margin-top: 20px
+}
+.btn-container:hover{
+    cursor: pointer;
+}
+.login-btn-shape{
+    font-family: 'Syne Mono', monospace;
+    color: white;
+    border-radius: 40px;
+    border: 0px;
+    width: 30%;
+    padding: 20px;
+    background-color: #6534d9; 
+    font-weight: bold;
+    font-size: 20px; 
+}
+.login-btn-shape:hover{
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+    rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    transition: all 1s;
+}
+#forget-pass-txt{
+    margin-left: 30px;
+    color: black !important;
+}
+.login-icons{
+    display: flex;
+    margin-top: 50px;
+}
+.login-icons > p{
+    color: #858794;
+    font-size: 15px;
+}
+.icon-container{
+    margin-left: 50px;
+}
+.icon-container:hover{
+    cursor: pointer;
 }
