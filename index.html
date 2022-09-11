@@ -1,64 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="contents/css/style.css">
-    <link rel="shortcut icon" href="contents/images/login-favicon.png" type="image/x-icon">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text&family=JetBrains+Mono:
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="contents/css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="contents/images/login-favicon.png"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Text&family=JetBrains+Mono:
     wght@500&family=Kanit:ital,wght@1,300&family=Nanum+Pen+Script&family=Permanent+Marker&family
-    =Roboto:wght@700&family=Spartan:wght@600&family=Syne+Mono&display=swap" rel="stylesheet">
+    =Roboto:wght@700&family=Spartan:wght@600&family=Syne+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <nav>
-            <div class="creative-text">
-                <p>
-                    <span style="color: #6534d9;">C</span>reative
-                </p>
-            </div>
-            <div class="new-user">
-                <p>
-                    new user?
-                    <a href="#" class="remove-txt-decoration">Login</a>
-                </p>
-            </div>
-        </nav>
+      <nav>
+        <div class="creative-text">
+          <p><span style="color: #6534d9">C</span>reative</p>
+        </div>
+        <div class="new-user">
+          <p>
+            new user?
+            <a href="#" class="remove-txt-decoration">Login</a>
+          </p>
+        </div>
+      </nav>
     </header>
     <section>
-        <div class="picture-container">
-            <img src="contents/images/Capture.PNG" alt="wellcome-picture" class="img-propertie">
+      <div class="picture-container">
+        <img
+          src="contents/images/Capture.PNG"
+          alt="wellcome-picture"
+          class="img-propertie"
+        />
+      </div>
+      <div class="form-container">
+        <p id="wellcome-back-txt">Welcome Back!</p>
+        <p id="login-to-continue-txt">login to continue</p>
+        <form action="#">
+          <input
+            type="email"
+            id="email"
+            placeholder="Example @ gmail.com"
+            class="input-propertie"
+            required
+          />
+          <input
+            type="password"
+            id="password"
+            placeholder="Enter Password"
+            class="input-propertie"
+            required
+          />
+          <div class="btn-container">
+            <input type="submit" value="login" class="login-btn-shape" />
+            <a href="#" class="remove-txt-decoration" id="forget-pass-txt">
+              FORGET PASSWORD?
+            </a>
+          </div>
+        </form>
+        <div class="login-icons">
+          <p>login with</p>
+          <div class="icon-container">
+            <img src="https://img.icons8.com/color/48/000000/google-logo.png" />
+            <img src="https://img.icons8.com/color/48/000000/facebook.png" />
+            <img src="https://img.icons8.com/color/48/000000/twitter--v1.png" />
+          </div>
         </div>
-        <div class="form-container">
-            <p id="wellcome-back-txt">
-                Welcome Back!
-            </p>
-            <p id="login-to-continue-txt">
-                login to continue
-            </p>
-            <form action="#">
-                <input type="email" id="email" placeholder="Example @ gmail.com" class="input-propertie" required>
-                <input type="password" id="password" placeholder="Enter Password" class="input-propertie" required>
-                <div class="btn-container">
-                    <input type="submit" value="login" class="login-btn-shape">
-                    <a href="#" class="remove-txt-decoration" id="forget-pass-txt">
-                        FORGET PASSWORD?
-                    </a>
-                </div>
-            </form>
-            <div class="login-icons">
-                <p>
-                    login with
-                </p>
-                <div class="icon-container">
-                    <img src="https://img.icons8.com/color/48/000000/google-logo.png"/>
-                    <img src="https://img.icons8.com/color/48/000000/facebook.png"/>
-                    <img src="https://img.icons8.com/color/48/000000/twitter--v1.png"/>
-                </div>
-            </div>
-        </div>
+      </div>
     </section>
-</body>
+  </body>
 </html>
