@@ -36,19 +36,23 @@ nav{
 
 section{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
     margin-top: 3%;
 }
+.picture-container {
+    width: 50%;
+}
 .img-propertie{
-    width: 600px;
-    box-shadow: rgb(85, 91, 255) 0px 0px 0px 3px,
-    rgb(129, 102, 194) 0px 0px 0px 6px,
-    rgb(61, 40, 110) 0px 0px 0px 9px;
-    margin-left: 25%;
+    width: 100%;
+    object-fit: cover;
 }
 .form-container{
-    margin-right: 12%;
+    width: 50%;
+    /* margin-right: 12%; */
 }
+
 #wellcome-back-txt{
     font-weight: bold;
     font-size: 35px;
@@ -63,7 +67,8 @@ form{
 .input-propertie{
     margin-top: 40px;
     padding: 20px;
-    width: 500px;
+    width: 80%;
+    max-width: 500px;
     border-radius: 30px;
     border: 0px;
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
@@ -120,4 +125,24 @@ form{
 }
 .icon-container:hover{
     cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+    .form-container {
+        width: 100%;
+        text-align: center;
+    }
+    .picture-container {
+        width: 100%;
+        text-align: center;
+    }
+    .input-propertie {
+        margin-inline: auto;
+    }
+    .icon-container{
+        margin-inline: auto;
+    }
+    .login-icons p {
+        display: none;
+    }
 }
